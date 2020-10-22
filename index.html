@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>jQuery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  </script>
+</head>
+
+<body>
+
+  <div id="imgHolder" class="imgHolder">
+
+    <img src="imgs/black.jpg" alt="cars">
+    <div class="model-summary">
+      <div class="model-name">Solaris</div>
+      <div class="model-space" id="modelSpecs">1.6 - 6AT Comfort</div>
+      <div class="model-price" id="modelPrice"></div>
+      <div class="model-price" id="modelPriceUSD"></div>
+      <div class="button">Buy</div>
+    </div>
+
+    <form id="autoForm">
+      <h2>Select you car</h2>
+      <div class="row">
+
+        <div class="col-1-of-3">
+          <h4>Engine</h4>
+          <div class="form-block">
+            <input type="radio" name="engine" id="engine1400" value="624900" checked>
+            <label for="engine1400">1.4 l (100 l.s)</label>
+          </div>
+          <div class="form-block">
+            <input type="radio" name="engine" id="engine1600" value="74900">
+            <label for="engine1600">1.6 l (120 l.s)</label>
+          </div>
+        </div>
+
+        <div class="col-1-of-3">
+          <h4>Transmission</h4>
+          <div class="form-block">
+            <input type="radio" name="trasmission" id="transmission6MT" value="0" checked>
+            <label for="transmission6MT">Manual 6 MT</label>
+          </div>
+          <div class="form-block">
+            <input type="radio" name="trasmission" id="transmission6AT" value="12500">
+            <label for="transmission6AT">Manual 6 AT</label>
+          </div>
+        </div>
+
+        <div class="col-1-of-3">
+          <h4>Package</h4>
+          <div class="form-block">
+            <input type="radio" name="package" id="packageActive" value="0" checked>
+            <label for="packageActive">Active</label>
+          </div>
+          <div class="form-block">
+            <input type="radio" name="package" id="packageActivePlus" value="85000">
+            <label for="packageActivePlus">Active Plus</label>
+          </div>
+          <div class="form-block">
+            <input type="radio" name="package" id="packageActiveComfort" value="125000">
+            <label for="packageActiveComfort">Comfort</label>
+          </div>
+        </div>
+
+      </div>
+
+      <h4>Color</h4>
+      <div class="form-block">
+        <select class="color-selector" name="color">
+          <option value="black">Black</option>
+          <option value="white">White</option>
+          <option value="yellow">Yellow</option>
+        </select>
+      </div>
+    </form>
+
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
