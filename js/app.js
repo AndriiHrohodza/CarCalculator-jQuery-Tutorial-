@@ -18,19 +18,19 @@ $(document).ready(() => {
     if ($(this).prop('checked')) {
       let _this = $(this);
       checkActiveSameNames(_this);
-      calculateCarPrice(+$(this).val());
+      calculateCarPrice(parseInt($(this).val()));
       showCarPrice(carPrice);
     } else {
       carPrice = startedCarPrice;
       $('.form-content input').each((i, input) => {
         if ($(input).prop('checked')) {
-          calculateCarPrice(+$(this).val());
+          calculateCarPrice(parseInt($(this).val()));
           showCarPrice(carPrice);
         } else {
           carPrice = startedCarPrice;
           $('.form-content input').each(function(i, input) {
             if ($(input).prop('checked')) {
-              calculateCarPrice(+$(this).val());
+              calculateCarPrice(parseInt($(this).val()));
               showCarPrice(carPrice);
             }
           });
@@ -47,7 +47,7 @@ $(document).ready(() => {
         if (context.prop('name') == $(this).prop('name')) {
           if (context.prop('id') != $(this).prop('id')) {
             $(this).prop('checked', false);
-            carPrice = carPrice - +$(this).val();
+            carPrice = carPrice - parseInt($(this).val());
           }
         }
       }
