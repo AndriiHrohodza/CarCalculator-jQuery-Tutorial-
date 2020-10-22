@@ -13,70 +13,89 @@
 
   <div id="imgHolder" class="imgHolder">
 
-    <img src="imgs/black.jpg" alt="cars">
-    <div class="model-summary">
-      <div class="model-name">Solaris</div>
-      <div class="model-space" id="modelSpecs">1.6 - 6AT Comfort</div>
-      <div class="model-price" id="modelPrice"></div>
-      <div class="model-price" id="modelPriceUSD"></div>
-      <div class="button">Buy</div>
+    <div class="image-container">
+      <img src="imgs/black.jpg" alt="cars">
     </div>
 
-    <form id="autoForm">
-      <h2>Select you car</h2>
-      <div class="row">
+    <div class="model-summary">
+      <div class="model-name">Tesla Roadster</div>
+      <span>-</span>
+      <div class="model-color" id="modelColor">Solid Black</div>
+      <span>-</span>
+      <div class="model-price" id="modelPrice">100000$</div>
+    </div>
 
-        <div class="col-1-of-3">
-          <h4>Engine</h4>
-          <div class="form-block">
-            <input type="radio" name="engine" id="engine1400" value="624900" checked>
-            <label for="engine1400">1.4 l (100 l.s)</label>
+    <div class="form">
+      <form id="autoForm">
+        <h2>Select you car</h2>
+        <div class="form-content">
+
+          <div class="color-block">
+            <h4>Color</h4>
+            <div class="color-black">
+              <input type="checkbox" name="color" id="black" value="0" checked>
+              <label for="black">
+                <img src="imgs/black-square.jpg" alt="black-square">
+              </label>
+            </div>
+            <div class="color-white">
+              <input type="checkbox" name="color" id="white" value="0">
+              <label for="white">
+                <img src="imgs/white-square.jpg" alt="white-square">
+              </label>
+            </div>
+            <div class="color-orange">
+              <input type="checkbox" name="color" id="orange" value="0">
+              <label for="orange">
+                <img src="imgs/orange-square.jpg" alt="orange-square">
+              </label>
+            </div>
+            <div class="color-blue">
+              <input type="checkbox" name="color" id="blue" value="0">
+              <label for="blue">
+                <img src="imgs/blue-square.jpg" alt="blue-square">
+              </label>
+            </div>
           </div>
-          <div class="form-block">
-            <input type="radio" name="engine" id="engine1600" value="74900">
-            <label for="engine1600">1.6 l (120 l.s)</label>
+
+          <div class="autopilot-block">
+            <h4>Autopilot</h4>
+            <div class="autopilot-block">
+              <input type="checkbox" name="autopilot" id="autopilot" value="10000">
+              <label for="autopilot">Autopilot</label>
+            </div>
+            <div class="full-self-driving-block">
+              <input type="checkbox" name="autopilot" id="fullSelfDriving" value="15000">
+              <label for="fullSelfDriving">Full Self Driving</label>
+            </div>
           </div>
+
+          <div class="wheels-block">
+            <h4>Wheels</h4>
+            <div class="wheels19-block">
+              <input type="checkbox" name="wheels" id="wheels19" value="2000">
+              <label for="wheels19">Wheels 19</label>
+            </div>
+            <div class="wheels21-block">
+              <input type="checkbox" name="wheels" id="wheels21" value="3000">
+              <label for="wheels21">Wheels 21</label>
+            </div>
+          </div>
+
+          <div class="roof-block">
+            <h4>Roof</h4>
+            <div class="roof-block">
+              <input type="checkbox" name="roof" id="roof" value="5000">
+              <label for="roof">Roof</label>
+            </div>
+          </div>
+
         </div>
-
-        <div class="col-1-of-3">
-          <h4>Transmission</h4>
-          <div class="form-block">
-            <input type="radio" name="trasmission" id="transmission6MT" value="0" checked>
-            <label for="transmission6MT">Manual 6 MT</label>
-          </div>
-          <div class="form-block">
-            <input type="radio" name="trasmission" id="transmission6AT" value="12500">
-            <label for="transmission6AT">Manual 6 AT</label>
-          </div>
+        <div class="btn-wrapper">
+          <button type="submit" name="button" class="btn">Buy</button>
         </div>
-
-        <div class="col-1-of-3">
-          <h4>Package</h4>
-          <div class="form-block">
-            <input type="radio" name="package" id="packageActive" value="0" checked>
-            <label for="packageActive">Active</label>
-          </div>
-          <div class="form-block">
-            <input type="radio" name="package" id="packageActivePlus" value="85000">
-            <label for="packageActivePlus">Active Plus</label>
-          </div>
-          <div class="form-block">
-            <input type="radio" name="package" id="packageActiveComfort" value="125000">
-            <label for="packageActiveComfort">Comfort</label>
-          </div>
-        </div>
-
-      </div>
-
-      <h4>Color</h4>
-      <div class="form-block">
-        <select class="color-selector" name="color">
-          <option value="black">Black</option>
-          <option value="white">White</option>
-          <option value="yellow">Yellow</option>
-        </select>
-      </div>
-    </form>
+      </form>
+    </div>
 
   </div>
 
